@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant1</title>
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&family=Cairo+Play:wght@200;300;400;700&family=Cairo:wght@300;600&family=Work+Sans:wght@200;300;400;500;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .container {
+            background-color: black;
+            
+          
+        }
+
+        .container-header {
+            color:gold;
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+
+        }
+
+        .container-header ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .body-all {
+            height: 90vh;
+            background-image: linear-gradient(90deg, rgba(119, 121, 28, 0.2)0%, rgba(90, 89, 20, 0.8)20%), url(hoi-an-8104131_1280.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .container-body {
+            width: 90%;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .container-body h1{
+            color: #fdfcfc;
+
+        }
+        .container-body h1 span{
+            color: gold
+            
+        }
+        .container-body p{
+            letter-spacing: 2px;
+            color: #fdfcfc;
+            margin-top: 15px;
+        }
+        .container-body button{
+            background-color: black;
+            width: 150px;
+            outline: none;
+            border: none;
+            margin-right: 300px;
+            margin-top: 20px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .container-body button a{
+            text-decoration: none;
+            color: gold;
+            font-family: inherit;
+        }
+      
+        img{
+            width: 100%;
+            height: 100%;
+        }
+      
+        .cover1{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.288);
+        
+            position: absolute;
+            top: 0%;  
+        }
+      
+        .pro2{
+            background-color: blue;
+            flex: 3;
+            height: 100%;
+            position: relative;
+            
+        }
+        .pro{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(255, 217, 0, 0.514);
+            width: 100%;
+            height: 400px;
+           overflow: hidden;
+            align-items: center;
+            border-radius: 50px;
+          
+            
+        }
+        .pro1{
+           flex-wrap: wrap;
+           flex: 2;
+           padding: 20px;
+        }
+        .pro2::after{
+            content: "";
+            width: 20px;
+            height: 100%;
+            background-color: gold;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            transform: rotate(9deg);
+        }
+        .importnt{
+            margin: 30px 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+          
+            margin-bottom: 50px;
+        
+            
+        }
+        .importnt1,
+        .importnt2,
+        .importnt3{
+            
+            background-color: rgba(255, 217, 0, 0.445);
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 5px;
+            height: 250px;
+            padding: 5px;
+            width: 300px;
+        }
+        .importnt h1{
+            font-size: 30px;
+            
+        }
+        i{
+         color: #fdfcfca8;
+         font-size: 20px;
+         margin: 0 10px;
+        }
+        footer{
+            color: #fdfcfc;
+            text-align: center;
+        }
+        .title{
+            text-align: center;
+        }
+        .title h4{
+            color: #fdfcfcbe;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 50px 70px;
+            gap: 100px;
+           
+        }
+        section .sec1{
+            color: aliceblue;
+            background-color: gold;
+            margin: auto;
+            text-align: center;
+            position: relative;
+           
+
+        }
+        .sec1::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgb(9, 12, 0);
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <div class="container">
+        <div class="container-header">
+            <h1>الاسمر</h1>
+            <ul>
+                <li>الصفحة الرئيسية</li>
+
+                <li>مادا تعرف عنا</li>
+                <li>منتجاتنا</li>
+                <li>من نحن</li>
+            </ul>
+        </div>
+        <div class="body-all">
+            <div class="container-body">
+                <h1>متجر <span>الاسمر</span>للمنتجات المحلية والعالمية</h1>
+                <p>متجر متخصص لبيع اجود انواع المنتجات و يحضى بشهرة عالمية ....</p>
+                <button><a href="">اعرف اكثر عنا</a></button>
+            </div>
+        </div>
+        <div class="title"> <h4>لمادا نحن !</h4></div>
+        <div class="importnt">
+            
+            <div class="importnt1">
+                <h1>التنوع في السلع والخدمات
+                <i class="fa-solid fa-gauge"></i></h1>
+
+                <p>يُمكن للعميل العثور على أي شيء يرغب باقتنائه بما فيها؛ الأثاث، والملابس، والأدوات الإلكترونية، وغيرها من البضائع والسلع</p>
+            </div>
+            <div class="importnt2">
+                <h1>الأسعار المميزة والخصومات التشجيعية
+                <i class="fa-solid fa-tag"></i></h1>
+                <p>يستطيع العميل شراء ما يرغب به من سلع وخدمات بسعر غالبًا ما يكون أرخص من المتاجر غير الإلكترونية</p>
+            </div>
+            <div class="importnt3">
+                <h1>سهولة عمليات الدفع 
+                <i class="fa-solid fa-tenge-sign"></i></h1>
+                <p>تُتيح المتاجر الإلكترونية عدة طرق للدفع أمام العميل، ومنها الدفع من خلال بطاقات الائتمان أو الدفع عند الاستلام</p>
+            </div>
+        </div>
+        <div class="pro">
+            <div class="pro1">
+             <h3>من نحن !</h3>
+             <p>>التنوع في السلع والخدمات يُمكن للعميل العثور على أي شيء يرغب باقتنائه بما فيها؛ الأثاث، والملابس، والأدوات الإلكترونية، وغيرها من البضائع والسلع. الأسعار المميزة والخصومات التشجيعية يستطيع العميل شراء ما يرغب به من سلع وخدمات بسعر غالبًا ما يكون أرخص من المتاجر غير الإلكترونية، وهو ما يعني إتاحة فرصة الادخار ولو بجزء قليل من أموال العميل. سهولة عمليات الدفع تُتيح المتاجر الإلكترونية عدة طرق للدفع أمام العميل، ومنها الدفع من خلال بطاقات الائتمان أو الدفع عند الاستلام</p>
+            </div>
+            <div class="pro2">
+             <img src="hoi-an-8104131_1280.jpg" alt="">
+             <div class="cover1"></div>
+            </div>
+           
+ 
+ 
+         </div>
+       
+        <section>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            <div class="sec1"><img src="apples-1776744_1280.jpg" alt="">
+            <h5>apples very good</h5>
+        </div>
+            
+        </section>
+       
+        <footer>
+            <p>للتواصل مع الادارة مباشرة</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </footer>
+    </div>
+</body>
+
+</html>
